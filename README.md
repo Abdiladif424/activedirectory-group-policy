@@ -60,7 +60,7 @@ You will see three primary settings that you need to configure:
 - You can wait for the Group Policy to propagate automatically, or you can force an update immediately.
 - On a client machine or server, open Command Prompt and type gpupdate /force, then press Enter.
 
-  <img width="2559" height="1438" alt="Screenshot 2025-07-21 122114" src="https://github.com/user-attachments/assets/a7a60dd1-8be8-4621-b178-b825e1d188f0" />
+<img width="2559" height="1438" alt="Screenshot 2025-07-21 122114" src="https://github.com/user-attachments/assets/a7a60dd1-8be8-4621-b178-b825e1d188f0" />
 
 6. By following these steps, you can successfully configure an account lockout policy in Active Directory using Group Policy.
 - We can now attempt to log in with it 6 times with a bad password
@@ -70,12 +70,19 @@ You will see three primary settings that you need to configure:
 
 7. Observe that the account has been locked out within Active Directory
 - Go to Active Directory Users and Computers
-- then right click on mydomain.com and click on find
-- you will then see the user account you want to unlock 
+- Then right-click on mydomain.com and click on find
+- You will then see the user account you want to unlock
+- Make sure to check the box so that the user account is unlocked
+- There are other account options you can check, such as "user must change password at next login", which is essentially resetting the password
 
 <img width="2559" height="1439" alt="Screenshot 2025-07-21 123225" src="https://github.com/user-attachments/assets/e1cbfcf3-ead4-4c80-bcae-7291427eeffe" />
 
-8. 
+8. We can then attempt to log in again after unlocking again
+- Once the user account chooses a different password to use, they should then be able to log back in again without any issues
+- Here's confirmation of it being successful!
+
+<img width="2559" height="1439" alt="Screenshot 2025-07-21 124800" src="https://github.com/user-attachments/assets/4734ae25-db80-40d2-9dc1-b51cf068dca6" />
+
 
 
 
